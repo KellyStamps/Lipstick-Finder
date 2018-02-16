@@ -1,10 +1,15 @@
 import React from 'react'
 
-const Navbar = (props) => {
+const Navbar = ({handleLogin}) => {
   return (
-    <div>
-      I'm the nav!
-    </div>
+    <ul className='navbar'>
+      <h1>Lipstick Finder</h1>
+      <form onSubmit={handleLogin}>
+        <input type='text' id='username' placeholder='Username'/>
+        <input type='password' id='password' placeholder='Password'/>
+        <input type='submit' value='Login'/>
+      </form>
+    </ul>
   )
 }
 

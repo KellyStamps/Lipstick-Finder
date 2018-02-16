@@ -2,9 +2,28 @@ body {
   background-color: #775B8C;
 }
 
-h2 {
+h2, h1 {
   font-family: 'Bungee Shade';
 }
+
+.navbar {
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: #BBB9D8;
+}
+
+.navbar > h1 {
+  display: inline;
+  width: 60px;
+  margin: 10px;
+}
+
+.navbar > form {
+  display: inline;
+  margin: 10px 10px 10px 40px;
+}
+
 
 .makeup-list {
   display: grid;
