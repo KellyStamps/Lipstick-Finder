@@ -1,5 +1,6 @@
 body {
   background-color: #775B8C;
+  font-family: 'Dosis';
 }
 
 h2, h1 {
@@ -59,4 +60,17 @@ h2, h1 {
 .brand-selector > select {
   height: 40px;
   width: 300px;
+  font-family: 'Dosis';
+}
+
+.search {
+  grid-area: 1/4/1/1;
+  text-align: center;
+}
+
+.search > input {
+  height: 30px;
+  width: 300px;
+  font-family: 'Dosis';
+  margin: 0px 0px 20px 0px;
 }

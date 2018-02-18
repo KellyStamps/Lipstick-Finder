@@ -1,6 +1,7 @@
 import React from 'react'
 import MakeupItem from './MakeupItem'
 import BrandSelector from './BrandSelector'
+import SearchBar from './SearchBar'
 import './App.css'
 
 class MakeupList extends React.Component {
