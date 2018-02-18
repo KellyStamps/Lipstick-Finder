@@ -4,11 +4,33 @@ import Navbar from './Navbar'
 import MakeupContainer from './MakeupContainer'
 
 class App extends Component {
+  
+  state = {
+    user: ''
+  }
+  
+  handleLogin = (event) => {
+    event.preventDefault()
+    fetch('http://localhost:3000/api/v1/users', {
+      method: 'POST',
+      body: JSON.stringify({
+        username: event.target.username.value,
+        password: event.target.password.value
+      }),
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .then(json => this.setState({user: json.username}))
+  }
+  
   render() {
     return (
       <div className="App">
-        <Navbar />
-        <MakeupContainer />
+        <Navbar handleLogin={this.handleLogin} user={this.state.user}/>
+        <MakeupContainer user={this.state.user} />
       </div>
     );
   }
