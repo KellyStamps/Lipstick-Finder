@@ -1,3 +1,3 @@
-class Api::V1::Favorites < ApplicationController 
+class Api::V1::FavoritesController < ApplicationController 
 
 end
