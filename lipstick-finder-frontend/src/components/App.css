@@ -25,6 +25,10 @@ h2, h1 {
   margin: 10px 10px 10px 40px;
 }
 
+.userInfo {
+  text-align: center;
+}
+
 
 .makeup-list {
   display: grid;

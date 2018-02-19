@@ -6,7 +6,7 @@ const BrandSelector = ({lipsticks, handlesSelect}) => {
     <div className='brand-selector'>
       <select onChange={handlesSelect}>
         <option value='all'>all</option>
-        {selectHelper(lipsticks).map(b => <option value={b}>{b}</option>)}
+        {selectHelper(lipsticks).map(b => <option key={b} value={b}>{b}</option>)}
       </select>
     </div>
   )

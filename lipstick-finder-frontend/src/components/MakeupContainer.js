@@ -1,5 +1,6 @@
 import React from 'react'
 import MakeupList from './MakeupList'
+import FavoritesList from './FavoritesList'
 import SearchBar from './SearchBar'
 
 class MakeupContainer extends React.Component {
@@ -17,7 +18,7 @@ class MakeupContainer extends React.Component {
   
   handleChange = (event) => {  
     let value = event.target.value
-    this.setState({ search: value}, console.log(this.state))
+    this.setState({ search: value})
   }
   
   getFilteredResults = () => {
@@ -28,7 +29,12 @@ class MakeupContainer extends React.Component {
     return(
     <div className='makeup-container'>
       <SearchBar handleChange={this.handleChange}/>
-      <MakeupList lipstick={this.getFilteredResults()}/>
+      {this.props.showing === 'all' ?
+        <MakeupList lipstick={this.getFilteredResults()}/>
+        :
+        <FavoritesList />
+      }
+      
     </div>
   )}
 }
