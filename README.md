@@ -4,7 +4,7 @@ Explore budget lipstick options.
 I wanted to learn more about fetching data from a static API, and sorting through a JSON response to create something clean and easy to view. 
 # Demo
 <a href="https://www.youtube.com/watch?v=Riu_P4xfWLU" target="_blank"><img src="http://img.youtube.com/vi/Riu_P4xfWLU/0.jpg" 
-alt="Code Challenger Thumbnail" width="240" height="180" border="10" /></a>
+alt="Lipstick Finder Thumbnail" width="240" height="180" border="10" /></a>
 
 # Features 
 Filter by brand, search for key terms in description, flip cards in place.
